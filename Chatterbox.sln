@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatterbox.Web", "Chatterbox.Web\Chatterbox.Web.csproj", "{1D222299-1CD8-419D-80B1-3DA15314203F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chatterbox.Web", "Chatterbox.Web\Chatterbox.Web.csproj", "{1D222299-1CD8-419D-80B1-3DA15314203F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatterbox.Services", "Chatterbox.Services\Chatterbox.Services.csproj", "{845D200D-CCD1-4291-9D1D-19281F3233C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chatterbox.Services", "Chatterbox.Services\Chatterbox.Services.csproj", "{845D200D-CCD1-4291-9D1D-19281F3233C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatterbox.Contracts", "Chatterbox.Contracts\Chatterbox.Contracts.csproj", "{B228DFA3-661E-4F0F-AE57-88870F105467}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chatterbox.Contracts", "Chatterbox.Contracts\Chatterbox.Contracts.csproj", "{B228DFA3-661E-4F0F-AE57-88870F105467}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatterbox.Models", "Chatterbox.Models\Chatterbox.Models.csproj", "{66351EC8-D596-4413-86E1-68CBFF880CB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chatterbox.Models", "Chatterbox.Models\Chatterbox.Models.csproj", "{66351EC8-D596-4413-86E1-68CBFF880CB4}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C225E550-B121-433A-BA30-700910F406E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{66351EC8-D596-4413-86E1-68CBFF880CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66351EC8-D596-4413-86E1-68CBFF880CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66351EC8-D596-4413-86E1-68CBFF880CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C225E550-B121-433A-BA30-700910F406E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C225E550-B121-433A-BA30-700910F406E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C225E550-B121-433A-BA30-700910F406E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C225E550-B121-433A-BA30-700910F406E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

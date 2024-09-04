@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  chatterbox.web:
+    image: ${DOCKER_REGISTRY-}chatterboxweb
+    build:
+      context: .
+      dockerfile: Chatterbox.Web/Dockerfile
+    ports:
+    - "44307:8081"
+  frontend:
+    image: ${DOCKER_REGISTRY-}chatterbox-client
+    build:
+      context: ./chatterbox-client
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"

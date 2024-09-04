@@ -22,4 +22,5 @@ RUN dotnet publish "./Chatterbox.Web.csproj" -c $BUILD_CONFIGURATION -o /app/pub
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+EXPOSE 44307
 ENTRYPOINT ["dotnet", "Chatterbox.Web.dll"]
