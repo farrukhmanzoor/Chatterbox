@@ -7,11 +7,17 @@ services:
       context: .
       dockerfile: Chatterbox.Web/Dockerfile
     ports:
-    - "44307:8081"
+        - "44307:8081"
+    environment:
+        - "ASPNETCORE_URLS=https://+;http://+"
+        - Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+        - Kestrel__Certificates__Default__Password=changeit
+    volumes:
+        - ~/.aspnet/https:/https:ro #this is very important
   frontend:
     image: ${DOCKER_REGISTRY-}chatterbox-client
     build:
       context: ./chatterbox-client
       dockerfile: Dockerfile
     ports:
-      - "80:80"
+        - "80:80"
