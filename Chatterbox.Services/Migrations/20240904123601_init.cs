@@ -35,7 +35,8 @@ namespace Chatterbox.Services.Migrations
                     Timestamp = table.Column<DateTime>(type: "TEXT", nullable: false),
                     UserId = table.Column<int>(type: "INTEGER", nullable: false),
                     IsDelivered = table.Column<bool>(type: "INTEGER", nullable: false),
-                    RecipientId = table.Column<int>(type: "INTEGER", nullable: false)
+                    RecipientId = table.Column<int>(type: "INTEGER", nullable: false),
+                    IsRead = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {

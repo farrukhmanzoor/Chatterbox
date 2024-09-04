@@ -30,6 +30,9 @@ namespace Chatterbox.Services.Migrations
                     b.Property<bool>("IsDelivered")
                         .HasColumnType("INTEGER");
 
+                    b.Property<bool>("IsRead")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("RecipientId")
                         .HasColumnType("INTEGER");
 

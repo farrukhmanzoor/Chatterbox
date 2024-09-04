@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Chatterbox.Services.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240901182440_init")]
+    [Migration("20240904123601_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -31,6 +31,9 @@ namespace Chatterbox.Services.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("IsDelivered")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsRead")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("RecipientId")
