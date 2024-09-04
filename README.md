@@ -1,10 +1,10 @@
-Chatterbox A real time chat application
+Chatterbox A real-time chat application
 
 About:
 
-This is a real-time chat application built using React (Create React App on the frontend) and C#, SignalR, .Core Backend.
+This is a real-time chat application built using React (Create React App on the front) and C#, SignalR,Core Backend.
 
-Users are able to sigin up, search and message other users in real-time.
+Users can sign up, search, and message other users in real-time.
 Tech Stack:
 
     SignalR
@@ -13,43 +13,54 @@ Tech Stack:
     SASS
     Dockers
 
-Software
-
 Before proceeding, please ensure you have the following software installed on your computer.
 
     Node
-    VS Code (optional but recommended)
+    VS Code
     Git command line tools
+	Dockers(for containers)
 
 Useful links
 
-    Download Git CLT - Windows: https://git-scm.com/download/windows Mac: https://git-scm.com/download/mac
+    Download Git CLT - Windows: https://git-scm.com/download/windows 
+	Mac: https://git-scm.com/download/mac
     Download Node - https://nodejs.org/en/
     Download VSCode - https://code.visualstudio.com/
 
-Getting started
+**Getting started**
 
-Please fork a copy of this repository. Forking a repository allows you to freely experiment with changes without affecting the original project. Alternatively download or clone the master branch.
+Please fork a copy of this repository. Forking a repository allows you to freely experiment with changes without affecting the original project. Alternatively, download or clone the master branch.
 Download & Install Dependencies on your machine
 
-Clone the repo to your machine
+Clone the repo to your machine.
 
-git clone <CloneURL>
+    git clone https://github.com/farrukhmanzoor/Chatterbox.git
 
-Lunch the frontend
+Launch the frontend
 
-    Open a new terminal window and navigate inside the 'Frontend' folder as you will need to keep the backend running in the background
+	Open a new terminal window and navigate inside the 'chatterbox-client' folder, as you will need to keep the backend running in the background.
+    cd <../path/to/Frontend> 
 
-cd <../path/to/Frontend> 
- npm install
+ Run
+ 
+     npm install
 
-    Run the start script
+Run the start script
 
- npm start
+     npm start
 
 Your app should be running on: http://localhost:3000
 
-For runng application container install dockers 
+Backend
+
+Build and run the application using build command
+    
+	dotnet build Chatterbox.Web
+
+
+
+For running application containers install dockers 
 Run command
-docker compose up
+
+    docker compose up
 
